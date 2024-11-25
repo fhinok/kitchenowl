@@ -532,7 +532,7 @@
   "privateRecipeDescription": "Nur Mitglieder des Haushaltes können das Rezept sehen.",
   "profile": "Profil",
   "public": "Öffentlich",
-  "publicRecipeDescription": "Jede Person mit dem Link zum Rezept kann es sehen.",
+  "publicRecipeDescription": "Jede Person auf dem Server oder mit dem Link zum Rezept kann es sehen.",
   "recentItemsCategorize": "Kategorisiere kürzlich verwendete Artikel",
   "recipeAdd": "Rezept hinzufügen",
   "recipeAddToHousehold": "Zu {householdName} hinzufügen",

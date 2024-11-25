@@ -2,6 +2,7 @@ from __future__ import annotations
 from typing import Self
 from app import db
 from app.helpers.timestamp_mixin import TimestampMixin
+from sqlalchemy import or_
 
 
 class DbModelMixin(TimestampMixin):
@@ -95,6 +96,13 @@ class DbModelMixin(TimestampMixin):
         return (
             cls.query.filter(cls.household_id == household_id).order_by(cls.name).all()
         )
+    
+    @classmethod
+    def all_public_by_name(cls, household_id: int) -> list[Self]:
+        """
+        Return all public instances of model
+        """
+        return cls.query.filter(or_(cls.public == True, cls.household_id == household_id)).order_by(cls.name).all()
 
     @classmethod
     def count(cls) -> int:

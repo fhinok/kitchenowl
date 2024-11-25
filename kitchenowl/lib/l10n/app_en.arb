@@ -539,7 +539,7 @@
   "privateRecipeDescription": "Only members of the household can view the recipe.",
   "profile": "Profile",
   "public": "Public",
-  "publicRecipeDescription": "Anyone with the link to this recipe can view it.",
+  "publicRecipeDescription": "Anyone on this server or with the link to this recipe can view it.",
   "recentItemsCategorize": "Categorize recent items",
   "recipeAdd": "Add recipe",
   "recipeAddToHousehold": "Add to {householdName}",

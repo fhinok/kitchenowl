@@ -22,8 +22,9 @@ recipeHousehold = Blueprint("recipe", __name__)
 @jwt_required()
 @authorize_household()
 def getAllRecipes(household_id):
+
     return jsonify(
-        [e.obj_to_full_dict() for e in Recipe.all_from_household_by_name(household_id)]
+        [e.obj_to_full_dict() for e in Recipe.all_public_by_name(household_id)]
     )
 
 
